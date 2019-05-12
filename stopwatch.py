@@ -1,8 +1,8 @@
 import time
 
-def main():
+def stopwatchLaps():
     print("Press ENTER TO BEGIN, press ENTER for a new lap")
-    input() #press ENTER to begin
+    input()  # press ENTER to begin
     print("Started")
     startTime = time.time()
     lastTime = startTime
@@ -18,6 +18,11 @@ def main():
             print("Lap number {}, total time: {}, lap time: {}".format(lapNum, totalTime, lapTime))
             lapNum += 1
             lastTime = time.time()
+
+
+def main():
+
+    stopwatchLaps()
 
 
 
