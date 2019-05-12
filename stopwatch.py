@@ -12,7 +12,7 @@ def stopwatchCountdown():
         print("DONE!   {} seconds are up!".format(userInput))
 
     else:
-        print("Please write a number!")
+        print("Please write a a whole number (an integer)!")
 
 
 def stopwatchLaps():
