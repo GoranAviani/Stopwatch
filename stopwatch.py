@@ -1,5 +1,15 @@
 import time
 
+def stopwatchCountdown():
+    userInput = input("Enter number of seconds of the countdown:\n")
+
+    for x in range (0,int(userInput)):
+        time.sleep(1)
+        print("Tick")
+
+    print("DONE!")
+
+
 def stopwatchLaps():
     print("Press ENTER TO BEGIN, press ENTER for a new lap")
     input()  # press ENTER to begin
@@ -25,7 +35,7 @@ def main():
     if userInput == "1":
         stopwatchLaps()
     elif userInput == "2":
-        pass
+        stopwatchCountdown()
     else:
         print("Unknown options")
 
