@@ -21,9 +21,13 @@ def stopwatchLaps():
 
 
 def main():
-
-    stopwatchLaps()
-
+    userInput = input("1. Stopwatch with laps\n 2. Count down \n ")
+    if userInput == "1":
+        stopwatchLaps()
+    elif userInput == "2":
+        pass
+    else:
+        print("Unknown options")
 
 
 if __name__ == "__main__":
