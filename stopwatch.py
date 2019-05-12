@@ -3,11 +3,11 @@ import time
 def stopwatchCountdown():
     userInput = input("Enter number of seconds of the countdown:\n")
 
-    for x in range (0,int(userInput)):
+    for x in range(0, int(userInput)):
         time.sleep(1)
         print("Tick")
 
-    print("DONE!")
+    print("DONE!   {} seconds are up!" .format(userInput))
 
 
 def stopwatchLaps():
