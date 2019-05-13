@@ -1,8 +1,23 @@
 import time
 
-def main():
+def stopwatchCountdown():
+    userInput = input("Enter number of seconds of the countdown:\n")
+
+    if userInput.isnumeric():
+
+        for x in range(0, int(userInput)):
+            time.sleep(1)
+            print("Tick")
+
+        print("DONE!   {} seconds are up!".format(userInput))
+
+    else:
+        print("Please write a a whole number (an integer)!")
+
+
+def stopwatchLaps():
     print("Press ENTER TO BEGIN, press ENTER for a new lap")
-    input() #press ENTER to begin
+    input()  # press ENTER to begin
     print("Started")
     startTime = time.time()
     lastTime = startTime
@@ -19,6 +34,15 @@ def main():
             lapNum += 1
             lastTime = time.time()
 
+
+def main():
+    userInput = input("1. Stopwatch with laps\n 2. Count down \n ")
+    if userInput == "1":
+        stopwatchLaps()
+    elif userInput == "2":
+        stopwatchCountdown()
+    else:
+        print("Unknown options")
 
 
 if __name__ == "__main__":
