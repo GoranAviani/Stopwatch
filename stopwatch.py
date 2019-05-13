@@ -4,10 +4,12 @@ def stopwatchCountdown():
     userInput = input("Enter number of seconds of the countdown:\n")
 
     if userInput.isnumeric():
+        seconds = int(userInput)
 
         for x in range(0, int(userInput)):
             time.sleep(1)
-            print("Tick")
+            seconds -= 1
+            print(str(seconds))
 
         print("DONE!   {} seconds are up!".format(userInput))
 
